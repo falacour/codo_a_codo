@@ -177,7 +177,9 @@ a.active,a:hover {
 }
 
 nav img{
-    height: inherit;
+    padding-top: 10;
+    padding-bottom: 10px;
+    /* height: inherit; */
 }
 
 @media(max-width:952px) {
