@@ -89,14 +89,6 @@ a.active,a:hover {
 .container{
     width: 100%;
     display: flex;
-    max-width: 1100px;
-    
-    
-    /*
-    justify-content:center
-    align-items: center;
-    font-family: sans-serif;
-    border: 3px solid black; */  
 }
 
 .card{
@@ -182,6 +174,62 @@ nav img{
     /* height: inherit; */
 }
 
+.oradores{
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.solicitud{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.oradores p{
+    font-size: 12px;
+}
+
+.formularioSolicitud{
+    width: 50%;
+}
+
+.formularioSolicitud textarea{
+    margin-top: 10px;
+    width: 100%;
+    resize: none;
+}
+
+.formularioSolicitud p{
+    font-size: 12px;
+}
+
+.textos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.datos{   
+    margin-top: 10px;
+    width: 49.7%;
+}
+
+.solicitudBoton{
+    width: 100%;
+    background: rgb(46, 161, 46);
+    margin-top: 10px;
+}
+
+.correo {
+    margin-top: 10px;
+    width: 100%;
+}
+
 @media(max-width:952px) {
     label.logo {
         font-size: 30px;
@@ -189,7 +237,7 @@ nav img{
 
     nav ul li a {
         font-size: 16px;
-    }
+    }    
 }
 
 @media(max-width:858px) {
@@ -225,6 +273,11 @@ nav img{
 
     #checkbox:checked~ul {
         left:0;
+    }
+
+    .datos{    
+        margin-top: 10px;
+        width: 100%;
     }
 
 }
