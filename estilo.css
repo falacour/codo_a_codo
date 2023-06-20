@@ -280,12 +280,27 @@ nav img{
     border-radius: 5px;
 }
 
+.precio h4{
+    display: inline;
+}
+
 input{
     padding: 5px;
     border-radius: 3px;
     border: solid;
     border-width: 1px;
     border-color: #6b6d6e;    
+}
+
+.compraTicket{
+    padding: 10px;
+    background: green;
+    font-weight: bold;
+}
+
+.errorInput{
+    border-color: red;
+    border-width: 2px;
 }
 
 @media(max-width:952px) {

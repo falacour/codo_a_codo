@@ -19,11 +19,11 @@
             </div>           
             
             <ul>
-                <li><a href="#" class="active">La conferencia</a></li>
+                <li><a href="#">La conferencia</a></li><!-- class="active"-->
                 <li><a href="#">Los oradores</a></li>
                 <li><a href="#">El lugar y la fecha</a></li>
                 <li><a href="#">Conviertete en orador</a></li>
-                <li><a href="#">Comprar ticket</a></li>
+                <li><a href="#formularioCompra" class="compraTicket">Comprar ticket</a></li>
             </ul>
             <label for="checkbox" class="checkbtn">
                 <i class="fa fa-bars"></i>
@@ -101,11 +101,11 @@
                 </div>
                 <textarea rows="5" cols="" placeholder="Sobre que quieres hablar?"></textarea>
                 <p>Recuerda incluir un titilo para tu charla.</p>
-                <button type="submit" class="solicitudBoton enviar">Enviar</button>
+                <button type="submit" class="solicitudBoton enviar" id="formOrador">Enviar</button>
             </form>
         </div>
     </div>
-    <div class="solicitud">
+    <div class="solicitud" id="formularioCompra">
         <div class="oradores">
             <p>Venta</p>
             <h3>VALOR DE TICKET $200</h3>
@@ -132,29 +132,30 @@
                         <p>* precentar documentación</p>
                 </div>
             </div>
-            <form action="" >
+            <form action="" id="formularioTicket">
                 <div class="textos">
                     <input type="text" name="nombreVenta" id="nombreVenta" class="datos" placeholder="Nombre">
                     <input type="text" name="apellidoVenta" id="apellidoVenta" class="datos" placeholder="Apellido">
                 </div>
-                <input type="text" name="correo" id="correo" class="correo" placeholder="Correo">
+                <input type="email" name="correo" id="correo" class="correo" placeholder="Correo">
                 <div class="textos">
                     <input type="text" name="cantidad" id="cantidad" class="datos" placeholder="Cantidad">
-                <select name="categoria" title="categoria" class="datos">
+                <select name="categoria" title="categoria" class="datos" id="categoria">
                     <option value="estudiante">Estudiante</option>
                     <option value="trainee">Trainee</option>
                     <option value="junior">Junior</option>
                 </select>                              
             </div>
             <div class="precio">
-                <h4>Total a pagar: $</h4>
+                <h4>Total a pagar: $ </h4><h4 id="montoTicket"></h4>
             </div>
             <div class="textos">
-                <button type="submit" class="solicitudBoton datos">Borrar</button>
-                <button type="submit" class="solicitudBoton datos">Resumen</button>
+                <button type="submit" class="solicitudBoton datos" id="formResetTicket">Borrar</button>
+                <button type="submit" class="solicitudBoton datos" id="formResumenTicket">Resumen</button>
             </div>                
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
